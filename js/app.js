@@ -1,4 +1,4 @@
-let url = `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/eur.json`
+let url 
 let text = document.getElementById('money')
 let btn_conv = document.getElementById('conv')
 let to_change = document.getElementById('sel1')
@@ -16,8 +16,8 @@ window.onload = function(){
     fetch(url)
         .then(function(Response){
             Response.json().then(function(data){
-                 console.log(data)
-                dol.value = data.usd.tnd 
+                
+                dol.value = data.usd.tnd +' TND' 
                 
                
             }).catch (function(){ dol.value =" chrgmt impossible "})
@@ -27,7 +27,7 @@ window.onload = function(){
             .then(function(Response){
                 Response.json().then(function(data){
                      
-                    eu.value = data.eur.tnd  
+                    eu.value = data.eur.tnd +' TND' 
                    
                 }).catch (function(){ dol.value =" chrgmt impossible "})
             })
@@ -36,7 +36,7 @@ window.onload = function(){
                 .then(function(Response){
                     Response.json().then(function(data){
                          
-                        rsa.value = data.sar.tnd  
+                        rsa.value = data.sar.tnd +' TND' 
                        
                     }).catch (function(){ dol.value =" chrgmt impossible "})
                 })
@@ -45,7 +45,7 @@ window.onload = function(){
                     .then(function(Response){
                         Response.json().then(function(data){
                              
-                            uem.value = data.aed.tnd  
+                            uem.value = data.aed.tnd +' TND' 
                            
                         }).catch (function(){ dol.value =" chrgmt impossible "})
                     })
@@ -61,7 +61,7 @@ to_change2.addEventListener('change', function(){
         .then(function(Response){
              Response.json().then(function(data){
                 result.classList.remove('d-none')
-                result.innerHTML = ` date : ${data.date} taux de change : ${data[to_change2.value]}`
+                result.innerHTML = ` date : ${data.date} taux de change : ${data[to_change2.value]} ${to_change2.value}`
                 
              }).catch(function(){ 
                 result.classList.remove('d-none')
@@ -92,10 +92,6 @@ function timeCount() {
     dat.value = day+"/"+month+"/"+year+" | "+hour+":"+minute+":"+second 
 
     setTimeout("timeCount()", 1000);
-
-    
-    
-
 
 }
     
