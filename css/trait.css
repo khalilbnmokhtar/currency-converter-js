@@ -1,0 +1,15 @@
+.shad{
+    box-shadow: rgba(209, 43, 43, 0.25) 0px 54px 55px, rgba(195, 28, 56, 0.25) 0px -12px 30px, rgba(215, 24, 37, 0.25) 0px 4px 6px, rgba(239, 18, 18, 0.25) 0px 12px 13px, rgba(233, 18, 68, 0.25) 0px -3px 5px !important;
+    
+}
+
+.box-cal11 {
+    position:absolute !important;
+    bottom: 20px !important;
+    right:  10px !important;
+   
+    box-shadow: rgba(241, 151, 207, 0.25) 0px 14px 28px, rgba(201, 40, 223, 0.22) 0px 10px 10px; 
+  
+     width: 200px;
+     border: solid 1px steelblue;
+}
