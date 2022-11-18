@@ -126,8 +126,7 @@ function changeMode()
           btnMode.value="white mode"
           btnMode.classList.remove('btn-dark')
           btnMode.classList.add('btn-danger')
-          
-           
+                     
     }
     
 }
