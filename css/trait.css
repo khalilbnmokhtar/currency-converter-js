@@ -13,3 +13,9 @@
      width: 200px;
      border: solid 1px steelblue;
 }
+
+#btn_mode{
+    position:absolute !important;
+    bottom: 55px !important;
+    right:  10px !important;
+}

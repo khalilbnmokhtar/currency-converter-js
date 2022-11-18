@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="css/trait.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
   </head>
-  <body class="bg-dark" >
-    <div class="container bg-dark">
+  <body class="bg-dark mode" >
+    <div class="container bg-dark mode">
        
         
         <div class="row m-3">
             <div class="col-sm-6">
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                        <span class="input-group-text text-white bg-dark shad ">de</span>
+                        <span class="input-group-text text-white bg-dark mode shad ">de</span>
                     </div>
-                    <select class="form-control from shad bg-dark text-danger" id="sel1">
+                    <select class="form-control from shad bg-dark text-danger mode" id="sel1">
                         <option value="">choisir un…</option>
                         <option value="usd">USD</option>
                         <option value="aed">AED</option>
@@ -78,9 +78,9 @@
             <div class="col-sm-6">
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                        <span class="input-group-text text-white bg-dark shad">A</span>
+                        <span class="input-group-text text-white bg-dark mode shad">A</span>
                     </div>
-                    <select class="form-control form shad bg-dark text-danger" id="sel2">
+                    <select class="form-control form shad bg-dark text-danger mode" id="sel2">
                         <option value="">choisir un…</option>
                         <option value="usd">USD</option>
                         <option value="aed">AED</option>
@@ -137,31 +137,34 @@
                         <option value="zar">ZAR</option>
                     </select>
                 </div>
-                <p class="text-center bg-dark fw-bold text-primary " id="result"></p>
+                <p class="text-center bg-dark mode fw-bold text-primary " id="result"></p>
 
             </div>
         </div>
         <div class="row d-flex justify-content-center p-4 mt-4 " >
             <div class="col-12 col-md-6 ">
-                <div class="form row text-danger bg-dark rounded shad ">
+                <div class="form row text-danger bg-dark mode rounded shad ">
                     <input type="text" id="date" class="text-center fw-bold text-danger bg-white " disabled>
 
                     <label for="usd" class="text-center " > DOLLAR</label>
-                    <input type="text" id="usd"  class="fw-bold text-center text-white bg-dark" disabled>
+                    <input type="text" id="usd"  class="fw-bold text-center text-white bg-dark mode" disabled>
                     <label for="euro" class="text-center "> EURO </label>
-                    <input type="text" id="eur" class="fw-bold text-center text-white bg-dark" disabled>
+                    <input type="text" id="eur" class="fw-bold text-center text-white bg-dark mode" disabled>
                     <label for="uae" class="text-center "> AED EMIRATE </label>
-                    <input type="text" id="uae" class="fw-bold text-center text-white bg-dark" disabled>
+                    <input type="text" id="uae" class="fw-bold text-center text-white bg-dark mode" disabled>
                     <label for="sar" class="text-center "> REYAL SAUDI</label>
-                    <input type="text" id="sar" class="fw-bold text-center text-white bg-dark" disabled>  
+                    <input type="text" id="sar" class="fw-bold text-center text-white bg-dark mode" disabled>  
                     
                 </div>
             </div>
         </div>
            
         <div class=" bg-dark shad text-center float-end rounded text-white box-cal11">
+            
             Designed by KHALIL
+            
         </div>
+        <input type="button" class="btn btn-danger btn-sm" value="white mode" id="btn_mode" onclick="changeMode()">
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" ></script>
 <script src="js/app.js"></script>  

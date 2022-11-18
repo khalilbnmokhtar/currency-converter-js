@@ -94,4 +94,41 @@ function timeCount() {
     setTimeout("timeCount()", 1000);
 
 }
+
+function changeMode()
+{
+    let btnMode = document.getElementById('btn_mode')
+    
+    let mode = document.getElementsByClassName('mode')
+   
+    if (btnMode.value == 'white mode')
+    {    console.log(mode)
+        Array.from(mode).forEach( (el) => {
+            el.classList.add('bg-light')
+            el.classList.remove('bg-dark')
+            el.classList.remove('text-white')
+            el.classList.add('border')
+            el.classList.add ('border-0')
+          });
+          btnMode.value="dark mode"
+          btnMode.classList.remove('btn-danger')
+          btnMode.classList.add('btn-dark')
+         
+    }
+    else
+    {
+        Array.from(mode).forEach( (el) => {
+            el.classList.add('bg-dark')
+            el.classList.remove('bg-light')
+            if (el.classList.value.includes("text-danger") == false)
+            {el.classList.add('text-white')}
+          });
+          btnMode.value="white mode"
+          btnMode.classList.remove('btn-dark')
+          btnMode.classList.add('btn-danger')
+          
+           
+    }
+    
+}
     
